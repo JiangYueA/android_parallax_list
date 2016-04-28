@@ -38,6 +38,7 @@ public class MineApplication extends Application {
         //加载Universal Image Loader图片缓存
         DisplayImageOptions options = new DisplayImageOptions.Builder()
                 .imageScaleType(ImageScaleType.EXACTLY)
+                .showImageOnLoading(R.color.colorGray)//设置图片在下载期间显示的图片
                 .resetViewBeforeLoading(false)
                 .cacheInMemory(true)//是否緩存都內存中
                 .cacheOnDisk(true)//是否緩存到sd卡上
