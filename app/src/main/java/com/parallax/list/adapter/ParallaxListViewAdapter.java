@@ -48,7 +48,13 @@ public class ParallaxListViewAdapter extends BaseAdapter {
         }
     }
 
-    /* 图片偏移量计算 */
+    /**
+     * 图片偏移量计算
+     *
+     * @param img
+     * @param distance
+     * @param listViewHeight
+     */
     public void setParallax(ParallaxImageView img, float distance, int listViewHeight) {
         if (null == matrix) {
             matrix = new Matrix();
